@@ -1,0 +1,17 @@
+- name: variables
+  hosts: localhost
+  vars: #variable declaration
+    Course: "Ansible"
+    Trainer: "Vinay"
+    Duration: "120hrs"
+  tasks: # task level declaration
+  - name: print the information
+    vars:
+      Course: "DevOps"
+    ansible.builtin.debug:
+      msg: "Hi we are learning {{Course}} from Trianer {{Trainer}} Duration is {{Duration}}."
+      
+  - name: print the information
+    ansible.builtin.debug:
+      msg: "Hi we are learning {{Course}} from Trianer {{Trainer}} Duration is {{Duration}}."
+
