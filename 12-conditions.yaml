@@ -1,4 +1,4 @@
-- name: condition
+- name: conditions
   hosts: web
   become: yes
   tasks:
